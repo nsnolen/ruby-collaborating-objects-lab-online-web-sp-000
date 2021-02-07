@@ -22,6 +22,7 @@ class Song
     split_name = filename.split(" - ")
     song = self.new(split_name[1])
     artist = Artist.find_or_create_by_name(split_name[0])
+    song = Artist.all
     #song.artist = artist
     song.save
   end
