@@ -24,7 +24,7 @@ class Song
     artist = Artist.find_or_create_by_name(split_name[0])
     song.artist = artist
     artist.song = song
-    song
+    song.save
   end
 
 #  def artist_name=(artist)
