@@ -7,7 +7,7 @@ class Artist
     @name = name
     save
     #@@all << self
-    @songs = []
+    #@songs = []
   end
 
   def self.all
