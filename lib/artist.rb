@@ -33,7 +33,7 @@ class Artist
   end
 
   def self.create(name)
-    self.new(name).save
+    self.new(name).save.uniq
   end
 
   def print_songs
